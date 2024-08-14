@@ -55,9 +55,11 @@ const App = () => {
       <Options onLeaveFeedback={updateFeedback} onResetFeedback={resetFeedback} totalFeedback={totalFeedback} />
       {totalFeedback > 0 ? (
         <>
-          <Feedback feedback={feedback} />
-          <p>Total feedback: {totalFeedback}</p>
-          <p>Positive feedback: {positiveFeedbackPercentage}%</p>
+          <Feedback
+          feedback={feedback}
+          totalFeedback={totalFeedback}
+          positiveFeedbackPercentage={positiveFeedbackPercentage}
+        />
         </>
       ) : (
         <Notification message="No feedback given" />

@@ -1,0 +1,13 @@
+body{
+display: flex;
+flex-direction: column;
+
+ }
+.feedback {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.feedback p {
+    margin: 5px 0;
+}
